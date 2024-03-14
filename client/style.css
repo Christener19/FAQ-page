@@ -2,7 +2,8 @@
 --Lightpink:  #F8EEFF;
 --Grayishpurple: #8B6990;
 --Darkpurple: #301534;
---white: #FFF
+--white: #FFF;
+--pink: #AD28EB
 }
 
 body {
@@ -11,10 +12,12 @@ body {
     font-size: 16px;
     font-family: "Work Sans", sans-serif;
     background-color: var(--Lightpink);
+    overflow-x: hidden;
+    
 }
 
 header > img {
-    width: 100vw;
+    width: 100%;
 }
 
 .card-container {
@@ -36,7 +39,20 @@ header > img {
 }
 .question-image {
     justify-content: space-between;
-
+}
+h1 {
+    font-size: 3vw;
+}
+h3 {
+    color: var(--Darkpurple);
+    font-size: 1.5vw;
+}
+h3:hover {
+    color: var(--pink);
+}
+.text-hide {
+    color: var(--Grayishpurple);
+    font-size: 1.3vw;
 }
 
 .attribution { font-size: 11px; text-align: center; }

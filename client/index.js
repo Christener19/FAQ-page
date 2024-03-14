@@ -5,11 +5,11 @@ for (let i = 0; i < hide.length; i++) {
     hide[i].style.display = "none"
 }
 
-plusbtn.forEach(function(button) {
+plusbtn.forEach(function(button, index) {
    button.addEventListener("click", function(){
    
-    hide.forEach(function(text){
-        
+    hide.forEach(function(text, textIndex){
+        if (index === textIndex) {
         if (text.style.display === "none") {
             text.style.display = "block"
             button.src = "./assets/images/icon-minus.svg"
@@ -17,6 +17,7 @@ plusbtn.forEach(function(button) {
             text.style.display = "none"
             button.src = "./assets/images/icon-plus.svg"
         }
+    }
     })
   
    })
