@@ -27,7 +27,7 @@ header > img {
     align-items: center;
 }
 .card-container {
-    margin: -15% 0 150px 0;
+    margin: -10% 0 10% 0;
     padding: 40px;
     background-color: var(--white);
     width: 60vw;
